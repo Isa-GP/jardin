@@ -1,0 +1,20 @@
+@extends('dashboard')
+
+@section('title', 'Lista de cursos')
+
+@section('content_header')
+    <h1>Lista de cursos</h1>
+@stop
+
+@section('content')
+    @livewire('cursos')
+@stop
+
+@section('css')
+    @livewireStyles
+@stop
+
+@section('js')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @livewireScripts
+@stop
